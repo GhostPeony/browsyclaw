@@ -1,0 +1,6 @@
+{
+  "name": "browsy-tools",
+  "description": "browsy browser tools for Claude Code — test and optimize agent browsing",
+  "version": "0.1.0",
+  "skills": ["../skills"]
+}

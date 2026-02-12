@@ -1,0 +1,71 @@
+{
+  "id": "openclaw-browsy",
+  "name": "Browsy Browser",
+  "description": "Zero-render browser for AI agents — fast, lightweight browsing via browsy's Spatial DOM engine",
+  "version": "0.1.0",
+  "skills": ["skills"],
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "port": {
+        "type": "number",
+        "default": 3847,
+        "minimum": 1024,
+        "maximum": 65535,
+        "description": "Port for the browsy server"
+      },
+      "autoStart": {
+        "type": "boolean",
+        "default": true,
+        "description": "Automatically start the browsy server when the plugin loads"
+      },
+      "allowPrivateNetwork": {
+        "type": "boolean",
+        "default": false,
+        "description": "Allow browsy to access private/internal network addresses (192.168.x, 10.x, 172.16-31.x)"
+      },
+      "preferBrowsy": {
+        "type": "boolean",
+        "default": true,
+        "description": "Intercept built-in browser tool calls and redirect them through browsy"
+      },
+      "serverTimeout": {
+        "type": "number",
+        "default": 10000,
+        "minimum": 1000,
+        "maximum": 60000,
+        "description": "Timeout in milliseconds to wait for browsy server to become ready"
+      }
+    }
+  },
+  "uiHints": {
+    "port": {
+      "label": "Server Port",
+      "placeholder": "3847",
+      "description": "TCP port the browsy REST server listens on.",
+      "group": "Server"
+    },
+    "autoStart": {
+      "label": "Auto-Start Server",
+      "description": "Start the browsy server process automatically when the plugin initializes.",
+      "group": "Server"
+    },
+    "allowPrivateNetwork": {
+      "label": "Allow Private Network",
+      "description": "When enabled, browsy can fetch URLs on private/internal networks. Disable for security.",
+      "group": "Network"
+    },
+    "preferBrowsy": {
+      "label": "Prefer Browsy",
+      "description": "Intercept OpenClaw's built-in browser tool and route through browsy for faster execution.",
+      "group": "Behavior"
+    },
+    "serverTimeout": {
+      "label": "Server Startup Timeout (ms)",
+      "placeholder": "10000",
+      "description": "How long to wait for browsy server to respond to health checks during startup.",
+      "group": "Server"
+    }
+  }
+}
