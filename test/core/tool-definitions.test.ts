@@ -6,8 +6,8 @@ describe("createBrowsyTools", () => {
   const ctx = new BrowsyContext({ port: 9999, autoStart: false });
   const tools = createBrowsyTools(ctx);
 
-  it("creates exactly 13 tools", () => {
-    expect(tools).toHaveLength(13);
+  it("creates exactly 14 tools", () => {
+    expect(tools).toHaveLength(14);
   });
 
   const expectedNames = [
@@ -21,6 +21,7 @@ describe("createBrowsyTools", () => {
     "browsy_login",
     "browsy_enter_code",
     "browsy_find",
+    "browsy_get_page",
     "browsy_page_info",
     "browsy_tables",
     "browsy_back",

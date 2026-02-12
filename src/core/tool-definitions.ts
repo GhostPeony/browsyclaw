@@ -212,6 +212,29 @@ export function createBrowsyTools(ctx: BrowsyContext): ToolDescriptor[] {
       },
     },
     {
+      name: "browsy_get_page",
+      description:
+        "Get the current page DOM with form state (typed values, checked states). Use after type_text/check/select to see the updated form.",
+      inputSchema: {
+        type: "object",
+        properties: {
+          format: {
+            type: "string",
+            description: "Output format: 'compact' (default) or 'json'",
+          },
+          scope: {
+            type: "string",
+            description:
+              "Scope: 'all' (default), 'visible', 'above_fold', or 'visible_above_fold'",
+          },
+        },
+      },
+      async execute(params: unknown) {
+        const p = params as { format?: string; scope?: string };
+        return ctx.executeToolCall("getPage", p);
+      },
+    },
+    {
       name: "browsy_page_info",
       description:
         "Get page metadata: page type, suggested actions (login/search/consent), alerts, pagination, title, and URL.",

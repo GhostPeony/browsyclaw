@@ -4,12 +4,6 @@ import { BrowsyClient } from "./core/client.js";
 import { ServerManager } from "./core/server-manager.js";
 import { SessionManager } from "./core/session-manager.js";
 
-type ClientMethod = keyof {
-  [K in keyof BrowsyClient as BrowsyClient[K] extends (...args: never[]) => Promise<BrowsyResponse>
-    ? K
-    : never]: true;
-};
-
 /**
  * Central facade holding config, client, server manager, and session manager.
  * One instance per plugin lifetime.
@@ -116,6 +110,12 @@ export class BrowsyContext {
         break;
       case "tables":
         response = await this.client.tables(token);
+        break;
+      case "getPage":
+        response = await this.client.getPage(
+          params as { format?: string; scope?: string },
+          token,
+        );
         break;
       case "back":
         response = await this.client.back(token);

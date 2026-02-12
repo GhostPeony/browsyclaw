@@ -1,5 +1,5 @@
 import type { BrowsyContext } from "../context.js";
-import type { BrowsyServerInfo, BrowsySession } from "../types.js";
+import type { BrowsyServerInfo } from "../types.js";
 
 export interface GatewayMethods {
   "browsy.status": () => BrowsyServerInfo;

@@ -49,7 +49,7 @@ describe("Agent Bootstrap Hook", () => {
     };
 
     hook(event);
-    expect(replacedTools).toHaveLength(13);
+    expect(replacedTools).toHaveLength(14);
   });
 
   it("does not duplicate if browsy tools already exist", () => {
