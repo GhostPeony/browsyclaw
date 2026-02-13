@@ -1,4 +1,4 @@
-# @openclaw/browsy
+# openclaw-browsy
 
 Zero-render browser plugin for OpenClaw. Integrates [browsy](https://github.com/nichochar/agentbrowser) as a fast, lightweight alternative to Playwright/CDP for AI agent browsing tasks.
 
@@ -9,7 +9,7 @@ OpenClaw's built-in browser uses Playwright + CDP: ~300MB RAM, 2-5s per page. br
 ## Install
 
 ```bash
-npm install @openclaw/browsy
+npm install openclaw-browsy
 ```
 
 Requires the `browsy` CLI binary in your PATH. Install from the [browsy releases](https://github.com/nichochar/agentbrowser/releases).
@@ -21,7 +21,7 @@ In your OpenClaw config:
 ```json
 {
   "plugins": {
-    "@openclaw/browsy": {
+    "openclaw-browsy": {
       "port": 3847,
       "autoStart": true,
       "allowPrivateNetwork": false,
@@ -46,7 +46,7 @@ In your OpenClaw config:
 
 ```typescript
 // openclaw.config.ts
-import { register } from "@openclaw/browsy";
+import { register } from "openclaw-browsy";
 export default { register };
 ```
 
@@ -71,7 +71,7 @@ Once registered, every agent gets 13 browsy tools automatically:
 ### Standalone
 
 ```typescript
-import { BrowsyContext } from "@openclaw/browsy";
+import { BrowsyContext } from "openclaw-browsy";
 
 const ctx = new BrowsyContext({ port: 3847, autoStart: false });
 const result = await ctx.executeToolCall("browse", { url: "https://example.com" });

@@ -79,7 +79,7 @@ Total speedup:     ~10x for migratable calls
 
 === Migration Checklist ===
 
-- [ ] Install @openclaw/browsy plugin
+- [ ] Install openclaw-browsy plugin
 - [ ] Set preferBrowsy: true in plugin config
 - [ ] Replace browser.get_text() calls with browsy_find
 - [ ] Replace browser.get_table() calls with browsy_tables
@@ -91,4 +91,4 @@ Total speedup:     ~10x for migratable calls
 ## Requirements
 
 - Agent configuration file or source code accessible in the workspace
-- `@openclaw/browsy` plugin available for migration target
+- `openclaw-browsy` plugin available for migration target

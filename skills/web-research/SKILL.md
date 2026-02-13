@@ -84,6 +84,6 @@ Sources:
 
 ## Requirements
 
-- `@openclaw/browsy` plugin must be registered
+- `openclaw-browsy` plugin must be registered
 - browsy server must be running (auto-started if `autoStart: true`)
 - Internet access for web search and page fetching

@@ -1,4 +1,4 @@
-# @openclaw/browsy
+# openclaw-browsy
 
 OpenClaw plugin integrating browsy as a fast, lightweight browser tool for AI agents.
 

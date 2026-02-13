@@ -95,6 +95,6 @@ Result: Application submitted. Confirmation number: GOV-2026-48291
 
 ## Requirements
 
-- `@openclaw/browsy` plugin must be registered
+- `openclaw-browsy` plugin must be registered
 - browsy server must be running (auto-started if `autoStart: true`)
 - Form data must be provided as a JSON object with keys that match field labels

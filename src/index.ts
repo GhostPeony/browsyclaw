@@ -1,5 +1,5 @@
 /**
- * @openclaw/browsy — Zero-Render Browser Plugin
+ * openclaw-browsy — Zero-Render Browser Plugin
  *
  * Standalone entry point and OpenClaw plugin registration.
  */
@@ -47,7 +47,7 @@ export function configureBrowsy(configInput?: BrowsyConfigInput): BrowsyContext 
  * Register this library as an OpenClaw plugin.
  *
  * ```ts
- * import { register } from "@openclaw/browsy";
+ * import { register } from "openclaw-browsy";
  * export default { register };
  * ```
  */

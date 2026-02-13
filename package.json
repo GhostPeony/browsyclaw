@@ -1,5 +1,5 @@
 {
-  "name": "@openclaw/browsy",
+  "name": "openclaw-browsy",
   "version": "0.1.0",
   "description": "Zero-render browser plugin for OpenClaw — fast, lightweight browsing for AI agents via browsy",
   "type": "module",

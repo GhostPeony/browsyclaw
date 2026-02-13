@@ -1,5 +1,5 @@
 /**
- * Shared types for @openclaw/browsy
+ * Shared types for openclaw-browsy
  */
 
 // ---------------------------------------------------------------------------
