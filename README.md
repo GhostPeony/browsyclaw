@@ -1,6 +1,6 @@
 # openclaw-browsy
 
-Zero-render browser plugin for OpenClaw. Integrates [browsy](https://github.com/nichochar/agentbrowser) as a fast, lightweight alternative to Playwright/CDP for AI agent browsing tasks.
+Zero-render browser plugin for OpenClaw. Integrates [browsy](https://browsy.dev) as a fast, lightweight alternative to Playwright/CDP for AI agent browsing tasks.
 
 ## Why browsy?
 
