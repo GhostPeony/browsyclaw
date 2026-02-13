@@ -9,7 +9,9 @@ export function createBrowsyTools(ctx: BrowsyContext): ToolDescriptor[] {
     {
       name: "browsy_browse",
       description:
-        "Navigate to a URL and return the page content. Use this to browse websites.",
+        "Navigate to a URL and return the page as a Spatial DOM with interactive elements. " +
+        "Use for interactive browsing: filling forms, logging in, clicking links, reading page structure. " +
+        "Do NOT use as a replacement for WebFetch — if you just need to read content from a URL, use WebFetch instead.",
       inputSchema: {
         type: "object",
         required: ["url"],
